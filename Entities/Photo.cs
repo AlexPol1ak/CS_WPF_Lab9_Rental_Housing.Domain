@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
 {
     /// <summary>
-    /// Photo class
+    /// Model table Photos
     /// </summary>
     public class Photo
     {

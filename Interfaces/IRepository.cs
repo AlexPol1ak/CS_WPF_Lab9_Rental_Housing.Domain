@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CS_WPF_Lab9_Rental_Housing.Domain.Interfaces
 {
     /// <summary>
-    /// Entity Repository Interface.
+    /// CRUD interface of operations with models.
     /// </summary>
     /// <typeparam name="TEntity">Database entity class</typeparam>
     public interface IRepository<TEntity> where TEntity : class
