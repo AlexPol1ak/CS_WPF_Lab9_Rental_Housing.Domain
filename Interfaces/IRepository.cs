@@ -18,6 +18,6 @@ namespace CS_WPF_Lab9_Rental_Housing.Domain.Interfaces
         IQueryable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
         void Create (TEntity entity);
         void Update (TEntity entity);
-        void Delete (int id);
+        bool Delete (int id);
     }
 }
