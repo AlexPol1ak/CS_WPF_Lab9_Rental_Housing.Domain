@@ -19,5 +19,6 @@ namespace CS_WPF_Lab9_Rental_Housing.Domain.Interfaces
         void Create (TEntity entity);
         void Update (TEntity entity);
         bool Delete (int id);
+        bool Contains(TEntity entity);
     }
 }
