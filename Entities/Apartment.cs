@@ -19,10 +19,12 @@ namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
         public string? Owner { get; set; } = null;
         public ulong? OwnerTel { get; set; } = null;
         public double? Price { get; set; } = null;
-        
+
         public ICollection<Photo> Photos { get; set; }
-        public int HouseId {  get; set; }
+        public int HouseId { get; set; }
         public House House { get; set; }
+
+        public Apartment() { }
 
         public override string ToString()
         {
