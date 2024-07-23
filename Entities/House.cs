@@ -11,8 +11,6 @@ namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
     /// </summary>
     public class House
     {
-        public House() { }
-
         public int HouseId { get; set; }
         public string City { get; set; }
         public string Street {  get; set; }
@@ -22,6 +20,8 @@ namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
         public bool HasElevator { get; set; } = false;
         public int BuildingYear { get; set; }
         public ICollection<Apartment> Apartments { get; set; }
+
+        public House() { }
 
         public override string ToString()
         {
