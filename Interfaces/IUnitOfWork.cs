@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,5 +18,9 @@ namespace CS_WPF_Lab9_Rental_Housing.Domain.Interfaces
         IRepository<Photo> PhotosRepository { get; }
 
         void SaveChanges();
+
+        void LoadRelatedEntities<T, TProperty>(T entity, Expression<Func<T, IEnumerable<TProperty>>> navigationProperty)
+          where T : class
+          where TProperty : class;
     }
 }
