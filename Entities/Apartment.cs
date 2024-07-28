@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 
 namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
 {
@@ -32,6 +34,28 @@ namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
                 $"Кв. {Number}, Площадь {Area} кв.м. " +
                 $"Стоимость: {Price?.ToString() ?? "-"}/мес.\n" +
                 $"Владелец: {Owner?.ToString() ?? "-"}";
+        }
+
+        public string ToString(bool full = false)
+        {
+            if (full == false) return ToString();
+
+            string info = $"Город: {House.City}\n" +
+               $"Улица: {House.Street}\n" +
+               $"Номер дома: {House.Number} \n" +
+               $"Корпус: {(House.Block != null ? House.Block : "Нет")}\n" +
+               $"Количество этажей: {House.CountFloors}\n" +
+               $"Лифт: {(House.HasElevator == true ? "Да" : "Нет")}\n" +
+               $"Год постройки: {House.BuildingYear}\n" +
+               $"Номер квартиры: {this.Number}\n" +
+               $"Этаж: {Floor}\n" +
+               $"Количество комнат: {CountRooms}\n" +
+               $"Площадь: {Area} кв.м.\n" +
+               $"Владелец: {(Owner != null ? Owner : "-")}\n" +
+               $"Номер владельца: {(OwnerTel != null ? OwnerTel.ToString() : "-")}\n" +
+               $"Цена: {(Price == null ? "-" : $"${Price}")}\n";
+
+            return info;
         }
     }
 }

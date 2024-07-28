@@ -27,5 +27,18 @@ namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
         {
             return $"{City}, {Street}, {Number}";
         }
+
+        public string ToString(bool full = false)
+        {
+            if (full == false) return ToString();
+            string info = $"Город: {City}\n" +
+                $"Улица: {Street}\n" +
+                $"Дом: {Number} \n" +
+                $"Корпус: {(Block != null? Block: "Нет")}\n" +
+                $"Количество этажей: {CountFloors}\n" +
+                $"Лифт: {(HasElevator==true? "Да": "Нет")}\n" +
+                $"Год постройки: {BuildingYear}\n";
+            return info;
+        }
     }
 }
