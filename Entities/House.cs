@@ -28,7 +28,7 @@ namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
             return $"{City}, {Street}, {Number}";
         }
 
-        public string ToString(bool full = false)
+        public string ToString(bool full)
         {
             if (full == false) return ToString();
             string info = $"Город: {City}\n" +

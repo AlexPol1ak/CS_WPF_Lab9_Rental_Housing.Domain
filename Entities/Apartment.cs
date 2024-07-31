@@ -36,7 +36,7 @@ namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
                 $"Владелец: {Owner?.ToString() ?? "-"}";
         }
 
-        public string ToString(bool full = false)
+        public string ToString(bool full)
         {
             if (full == false) return ToString();
 
