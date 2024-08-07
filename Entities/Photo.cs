@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
+﻿namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
 {
     /// <summary>
     /// Model table Photos

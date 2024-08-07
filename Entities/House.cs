@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
+﻿namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
 {
     /// <summary>
     /// Model table Houses
@@ -13,10 +7,10 @@ namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
     {
         public int HouseId { get; set; }
         public string City { get; set; }
-        public string Street {  get; set; }
-        public int Number {  get; set; }
+        public string Street { get; set; }
+        public int Number { get; set; }
         public int? Block { get; set; } = null;
-        public int CountFloors {  get; set; }
+        public int CountFloors { get; set; }
         public bool HasElevator { get; set; } = false;
         public int BuildingYear { get; set; }
         public ICollection<Apartment> Apartments { get; set; }
@@ -34,9 +28,9 @@ namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
             string info = $"Город: {City}\n" +
                 $"Улица: {Street}\n" +
                 $"Дом: {Number} \n" +
-                $"Корпус: {(Block != null? Block: "Нет")}\n" +
+                $"Корпус: {(Block != null ? Block : "Нет")}\n" +
                 $"Количество этажей: {CountFloors}\n" +
-                $"Лифт: {(HasElevator==true? "Да": "Нет")}\n" +
+                $"Лифт: {(HasElevator == true ? "Да" : "Нет")}\n" +
                 $"Год постройки: {BuildingYear}\n";
             return info;
         }

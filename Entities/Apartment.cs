@@ -1,23 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Documents;
-
-namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
+﻿namespace CS_WPF_Lab9_Rental_Housing.Domain.Entities
 {
     /// <summary>
     /// Model table Apartments
     /// </summary>
     public class Apartment
     {
-        public int ApartmentId {  get; set; }
+        public int ApartmentId { get; set; }
         public int Number { get; set; }
         public int Floor { get; set; }
-        public int CountRooms {  get; set; }
-        public double Area {  get; set; }
+        public int CountRooms { get; set; }
+        public double Area { get; set; }
         public string? Owner { get; set; } = null;
         public ulong? OwnerTel { get; set; } = null;
         public double? Price { get; set; } = null;
