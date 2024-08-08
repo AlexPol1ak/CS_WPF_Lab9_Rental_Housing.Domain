@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CS_WPF_Lab9_Rental_Housing.Domain.Entities.Apartment">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QICAAACAAQAAACgEAEAAAAAAAAAgAAAAAAIAAQAAAAA=</HashCode>
+      <FileName>Entities\Apartment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Photos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CS_WPF_Lab9_Rental_Housing.Domain.Entities.House">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAEAAAAAAQAMAEAgAAAAAAAgAAAAQAIAAAAAAAA=</HashCode>
+      <FileName>Entities\House.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Apartments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CS_WPF_Lab9_Rental_Housing.Domain.Entities.Photo">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAACQAAIAAA=</HashCode>
+      <FileName>Entities\Photo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CS_WPF_Lab9_Rental_Housing.Domain.Interfaces.IRepository&lt;TEntity&gt;">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAABAAAAAAAQAAAEIAEAAAgAAAAAQAAA=</HashCode>
+      <FileName>Interfaces\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CS_WPF_Lab9_Rental_Housing.Domain.Interfaces.IUnitOfWork">
+    <Position X="9.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAgAAAAAAFABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ApartmentsRepository" />
+      <Property Name="HousesRepository" />
+      <Property Name="PhotosRepository" />
+    </ShowAsAssociation>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
